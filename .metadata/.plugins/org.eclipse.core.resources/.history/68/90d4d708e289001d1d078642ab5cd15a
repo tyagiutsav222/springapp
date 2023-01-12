@@ -1,0 +1,14 @@
+package com.example.learnspringboot.SayHelloController;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class SayHelloController {
+	
+	@RequestMapping("say-hello")
+	public String SayHello()
+	{
+		return "hello Hi I am new to springboot";
+		
+	}
+
+}

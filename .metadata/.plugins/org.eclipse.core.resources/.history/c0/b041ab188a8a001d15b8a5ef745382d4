@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>My-first-page</title>
+</head>
+<body>
+<h1>Login Page -JSP</h1>
+<h2>welcome : ${name}</h2> 
+ <form >
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+ <input type="submit">
+ 
+</form> 
+</body>
+</html>

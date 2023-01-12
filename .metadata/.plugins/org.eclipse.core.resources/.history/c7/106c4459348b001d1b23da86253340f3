@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>My-first-page</title>
+</head>
+<body>
+<h1>welcome ${name} to log in page . your password is ${password}</h1>
+<h1>your username is:  ${name} </h1>
+<h1>ypour password is: ${password} </h1>
+</body>
+</html>

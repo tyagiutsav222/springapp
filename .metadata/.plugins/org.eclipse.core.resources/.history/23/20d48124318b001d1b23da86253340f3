@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>My-first-page</title>
+</head>
+<body>
+<h1>Login Page -JSP</h1>
+<h2>welcome</h2> 
+ <form method="post">
+  <label for="name"> User Name:</label>
+  <input type="text" name="name"><br><br>
+   <label for="password">password :</label>
+  <input type="password" name="password"><br><br>
+ <input type="submit">
+ 
+</form> 
+</body>
+</html>

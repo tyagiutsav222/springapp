@@ -1,0 +1,13 @@
+package com.example.learnspringboot.SayHelloController;
+
+public class AuthenticateService {
+	
+	public boolean authenticate(String username, String password)
+	{
+		boolean isValidUserName = username.equalsIgnoreCase("utsav");
+		boolean isValidPassword = password.equalsIgnoreCase("tyagi");
+		
+		return isValidUserName && isValidPassword;
+	}
+
+}

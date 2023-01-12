@@ -1,0 +1,15 @@
+package com.example.learnspringboot.login;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class LoginController {
+
+	@RequestMapping("login")   //url
+	public String gotoLoginPage()
+	{
+		return "LoginPage";  //returns jsp page;
+		
+	}
+}

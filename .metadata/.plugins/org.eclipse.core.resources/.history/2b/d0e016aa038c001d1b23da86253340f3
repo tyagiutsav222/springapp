@@ -1,0 +1,11 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<html>
+<head>
+<title>My-first-page</title>
+</head>
+<body>
+<h1>welcome ${name}</h1>
+<p>Your Todos are ${todos}</p>
+</body>
+</html>
