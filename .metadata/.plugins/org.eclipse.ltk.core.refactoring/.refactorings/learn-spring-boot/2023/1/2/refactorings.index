@@ -9,3 +9,8 @@
 1673520525788	Rename package 'com.example.myfirstwebapp'
 1673520673207	Rename package 'com.example.myfirstwebapp.security'
 1673594115388	Extract method 'getLoggedInUsername'
+1673595511006	Extract local variable 'username'
+1673595521547	Extract local variable 'password'
+1673595682718	Extract method 'createNewUser'
+1673595695690	Inline local variable 'username'
+1673595719326	Inline local variable 'password'
