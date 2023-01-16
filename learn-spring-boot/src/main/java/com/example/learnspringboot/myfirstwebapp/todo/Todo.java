@@ -3,26 +3,32 @@ package com.example.learnspringboot.myfirstwebapp.todo;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Size;
 
+@Entity
 public class Todo {
 	
+	@Id
+	@GeneratedValue
 	private int id;
 	private String username;
 	@Size(min=5, message="Enter atleast 10characters")
 	private String description;
-	private LocalDate targetdate;
-	private LocalTime targettime;
+	private LocalDate targetDate;
+	/* private LocalTime targettime; */
 	private boolean done;
 	
 
-	public Todo(int id, String username, String description, LocalDate targetdate, LocalTime targettime, boolean done) {
+	public Todo(int id, String username, String description, LocalDate targetdate,  boolean done) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.description = description;
-		this.targetdate = targetdate;
-		this.targettime = targettime;
+		this.targetDate = targetdate;
+		/* this.targettime = targettime; */
 		this.done = done;
 	}
 
@@ -46,18 +52,18 @@ public class Todo {
 		this.description = description;
 	}
 	public LocalDate getTargetdate() {
-		return targetdate;
+		return targetDate;
 	}
 	public void setTargetdate(LocalDate targetdate) {
-		this.targetdate = targetdate;
-	}
-	public LocalTime getTargettime() {
-		return targettime;
+		this.targetDate = targetdate;
 	}
 
-	public void setTargettime(LocalTime targettime) {
-		this.targettime = targettime;
-	}	
+	/*
+	 * public LocalTime getTargettime() { return targettime; }
+	 * 
+	 * public void setTargettime(LocalTime targettime) { this.targettime =
+	 * targettime; }
+	 */	
 	public boolean isDone() {
 		return done;
 	}
@@ -68,7 +74,7 @@ public class Todo {
 	@Override
 	public String toString() {
 		return "Todo [id= " + id + ", username= " + username + ", description= " + description + ", targetdate= "
-				+ targetdate + ", targettime= " + targettime + ", done= " + done + "]";
+				+ targetDate + ", done= " + done + "]";
 	}
 
 }

@@ -47,7 +47,7 @@ public class TodoController {
 	public String showNewTodoPage(ModelMap model) 
 	{	
 		String username=getLoggedInUsername(model);
-		Todo todo=new Todo(0, username,"", LocalDate.now().plusYears(1),null,false);
+		Todo todo=new Todo(0, username,"", LocalDate.now().plusYears(1),false);
 		model.put("todo", todo);
 		return "todo";
 	}
