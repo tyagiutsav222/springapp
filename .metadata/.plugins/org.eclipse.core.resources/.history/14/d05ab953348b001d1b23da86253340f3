@@ -1,9 +1,0 @@
-<html>
-<head>
-<title>My-first-page</title>
-</head>
-<body>
-<h1>welcome ${name} to log in page . your password is ${password}</h1>
-
-</body>
-</html>

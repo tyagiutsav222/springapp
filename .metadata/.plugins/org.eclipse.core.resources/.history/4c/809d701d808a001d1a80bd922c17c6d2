@@ -1,7 +1,0 @@
-management.endpoints.web.exposure.include=*
-server.port=8080
-
-sspring.mvc.view.prefix=/WEB-INF/jsp/
-spring.mvc.view.suffix=.jsp
-logging.level.org.springframework=debug
-logging.level.org.springframework=info
