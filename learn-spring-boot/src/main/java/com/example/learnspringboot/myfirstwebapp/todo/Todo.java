@@ -1,11 +1,17 @@
 package com.example.learnspringboot.myfirstwebapp.todo;
 
 import java.time.LocalDate;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Future;
+import jakarta.validation.constraints.FutureOrPresent;
+import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
 
 @Entity
@@ -31,6 +37,7 @@ public class Todo {
 	private String username;
 	@Size(min=5, message="Enter atleast 10characters")
 	private String description;
+	@FutureOrPresent(message="date must be less than today")  
 	private LocalDate targetDate;
 	/* private LocalTime targettime; */
 	private boolean done;
