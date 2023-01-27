@@ -24,15 +24,22 @@
 
 <form:input path="id"  type="hidden"  />
 <form:input path="done" type="hidden" />
-<input type ="submit" class="btn btn-success"/>
+<input type ="submit" class="btn btn-success" onClick="check()"/>
 </form:form>
 </div>
 
 <%@ include file="common/footer.jspf" %>
+<!-- <script>
+function check()
+{
+	
+	alert("hello");
+	}
+</script> -->
 <script>
 $('#targetdate').datepicker({
     format: 'yyyy-mm-dd'
-    
+  
 });
 
 </script>

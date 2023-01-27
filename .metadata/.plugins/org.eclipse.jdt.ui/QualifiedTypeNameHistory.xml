@@ -38,4 +38,10 @@
     <fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Table"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="jakarta.validation.constraints.Past"/>
+    <fullyQualifiedTypeName name="org.springframework.format.annotation.DateTimeFormat"/>
+    <fullyQualifiedTypeName name="jakarta.validation.constraints.Future"/>
+    <fullyQualifiedTypeName name="jakarta.validation.constraints.FutureOrPresent"/>
 </qualifiedTypeNameHistroy>

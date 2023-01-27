@@ -1,0 +1,14 @@
+package com.example.learnspringboot.myfirstwebapp.exception;
+
+import java.time.LocalDate;
+
+class DateException {
+
+	public void DateCheck(LocalDate targetDate)
+	{
+		LocalDate date = LocalDate.now();
+		
+	      System.out.println("Current Date: "+date);
+	}
+
+}

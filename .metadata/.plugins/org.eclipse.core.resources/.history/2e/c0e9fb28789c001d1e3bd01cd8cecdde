@@ -1,0 +1,10 @@
+package com.example.learnspringboot.myfirstwebapp.exception;
+
+public class DateException {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

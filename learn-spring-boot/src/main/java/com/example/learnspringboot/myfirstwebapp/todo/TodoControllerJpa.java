@@ -49,13 +49,19 @@ public class TodoControllerJpa {
 				
 		return authentication.getName();
 	}
-	
+
+	/*
+	 * @Id int id = 0;
+	 */
 	@RequestMapping(value="add-todo", method=RequestMethod.GET)
 	public String showNewTodoPage(ModelMap model) 
 	{	
 		String username=getLoggedInUsername(model);
-		Todo todo=new Todo(0, username,"", LocalDate.now().plusYears(1),false);
+		
+		Todo todo=new Todo(0, username,"", LocalDate.now().plusYears(1),true);
+		
 		model.put("todo", todo);
+		
 		return "todo";
 	}
 	
@@ -66,6 +72,8 @@ public class TodoControllerJpa {
 		{
 			return "todo";
 		}
+		
+		
 		String username=getLoggedInUsername(model);
 		todo.setUsername(username);
 		todoRepository.save(todo);
