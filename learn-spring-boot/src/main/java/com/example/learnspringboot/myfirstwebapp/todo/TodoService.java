@@ -17,6 +17,7 @@ public class TodoService {
 	private static List<Todo> todos = new ArrayList<>();
 	
 	private static int todosCount = 0;
+	
 	static
 	{
 		//todos.add(new Todo(++todosCount, "in28minutes", "learn cloud", LocalDate.now().plusYears(3), LocalTime.now(), false));

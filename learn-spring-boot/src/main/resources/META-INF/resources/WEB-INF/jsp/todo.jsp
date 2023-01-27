@@ -29,19 +29,21 @@
 </div>
 
 <%@ include file="common/footer.jspf" %>
+
+
 <!-- <script>
 function check()
-{
-	
-	alert("hello");
+    {
+	    alert("hello");
 	}
 </script> -->
 <script>
 $('#targetdate').datepicker({
     format: 'yyyy-mm-dd'
-  
 });
 
 </script>
+
+
 
 

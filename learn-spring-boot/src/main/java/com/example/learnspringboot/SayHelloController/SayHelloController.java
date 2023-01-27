@@ -9,8 +9,7 @@ public class SayHelloController {
 	@RequestMapping("say-hello-jsp")   //url
 	public String SayHelloMethod()
 	{
-		return "sayHello";  //returns jsp page;
-		
+		return "sayHello";  //returns jsp page;	
 	}
 
 }

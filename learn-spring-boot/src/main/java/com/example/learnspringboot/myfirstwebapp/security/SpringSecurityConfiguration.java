@@ -70,6 +70,4 @@ public class SpringSecurityConfiguration {
 		return http.build();
 		
 	}
-	
-	
 }
